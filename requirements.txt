@@ -1,0 +1,25 @@
+I chose to combine Exponential Moving Average (EMA) with Z-score calculation for anomaly detection.
+
+# Explanation:
+1. Exponential Moving Average (EMA):
+   - I find that EMA gives more weight to recent data points, making it responsive to changes in the data stream. This adaptability is crucial for detecting anomalies, especially in dynamic environments where trends can shift.
+
+2. Z-score Calculation:
+   - The Z-score indicates how many standard deviations a data point is from the mean. By comparing the current value against the EMA and its calculated standard deviation, I can identify outliers that are statistically significant.
+
+# Effectiveness:
+- I believe this approach is effective because it dynamically adjusts to the data's behavior over time, allowing for accurate anomaly detection in the presence of noise and seasonality.
+- The combination of EMA and Z-score helps me quickly identify anomalies while reducing false positives, making it suitable for real-time applications.
+
+#External Libraries Used:
+1. NumPy
+   - Version: 1.19.5 (or higher)
+   - Purpose: Used for numerical operations and data handling.
+
+2. Matplotlib
+   - Version: 3.3.4 (or higher)
+   - Purpose: Used for plotting and visualizing data.
+
+3. Random (built-in)
+   - Version: N/A (built-in library)
+   - Purpose: Used for generating random numbers and sampling.
